@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <title>Ajout</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    </head>
+    <body>
+        <header>
+            <div class="headerimage">
+                <img src="img/header.jpg" alt="Show" Style="width:100%">
+                <div class="centered-text">
+                    <h1>Ajout d'un nouveau poème</h1>
+                </div>
+            </div>
+        </header>
+        <section>
+        <form method="post" action="projet2.pdo.php">
+            Nom de l'auteur en français: <input type="text" name="auteur_fr"><br>
+            Nom de l'auteur en chinois: <input type="text" name="auteur_ch"><br>
+            Nom de la poème en français: <input type="text" name="nom_fr"><br>
+            Nom de la poème en chinois: <input type="text" name="nom_ch"><br>
+            Terme du poème en français: 
+            <input type="radio" name="terme_fr" value="paysage">Paysage
+            <input type="radio" name="terme_fr" value="guerre"> Guerre
+            <input type="radio" name="terme_fr" value="histoire">Histoire
+            <input type="radio" name="terme_fr" value="tristesse">Tristesse
+            <br>
+            Terme du poème en chinois: 
+            <input type="radio" name="terme_ch" value="paysage">风景
+            <input type="radio" name="terme_ch" value="guerre"> 战争
+            <input type="radio" name="terme_ch" value="histoire">怀古
+            <input type="radio" name="terme_ch" value="tristesse">愁绪
+            <br>
+            <label for="poeme_fr">Poème en français: </label>
+            <textarea id="poeme_fr" name="poeme_fr" rows="4" cols="50"></textarea><br><br>
+            <label for="poeme_ch">Poème original: </label>
+            <textarea id="poeme_ch" name="poeme_ch" rows="4" cols="50"></textarea>
+            
+            <br><br>
+            <input type="submit" value="Valider">
+        </form>
+
+        </section>
+        <footer>
+            <p>Copyright : Xinyi Shen 2021</p>
+        </footer>
+    </body>
+</html>

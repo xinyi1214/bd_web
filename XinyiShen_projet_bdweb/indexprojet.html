@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <title>projet BD</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="fichier.js"></script>
+            
+        <style>#panel, #flip {
+                padding: 5px;
+                background-color: #f5f3f0;
+                border: 0px;
+                        }
+
+                #panel {
+                    padding: 50px;
+                    display: none;
+        }</style>
+    </head>
+    <body>
+        <header>
+            <div class="headerimage">
+                <img src="img/header.jpg" alt="Show" Style="width:100%">
+                <div class="centered-text">
+                    
+                    <h1>Poèmes chinois</h1>
+                    <h2>中国诗歌</h2>
+                </div>
+            </div>
+        </header>
+        
+        <section>
+            <nav>
+                <ul>
+                    <li><a href="#introduction">Introduction du site</a></li>
+                    <li><a href="#recherche">Recherche</a></li>
+                    <li><a href="#ajout">Ajout</a></li>
+                </ul>
+            </nav>
+        
+        
+        <article>
+            <div id="introduction">
+                <h2>Intoduction du site</h2>
+                <h3>Poème chinois</h3>
+                <img src="img/poeme.jpg" alt="Show" Style="width:18%;float:right">
+                <p>L'écriture occupe une place centrale dans la culture chinoise et la poésie a toujours occupé le premier rang parmi les modes d'expression. Lettré, écrivain et poète y sont des termes interchangeables, qualités déterminant la valeur d'un homme. Les examens impériaux étaient basés en grande partie sur la maitrise de l'écriture.</p>
+                    
+                <p>L'histoire de la poésie chinoise peut être divisée en trois périodes principales : la période antique, caractérisée par des chansons folkloriques aux formes simples et répétitives, la période classique de la dynastie Han à la dynastie Qing, qui voit une prolifération de formes diverses, et enfin la période moderne caractérisée par des vers libres d'influence occidentale. Les poèmes n'ont été associés à la peinture, qui partage le même médium calligraphique, que tardivement.</p>
+                    
+                <p>Il faut garder en mémoire que les mots sont monosyllabiques dans une langue tonale, que le poème chinois est avant tout un rythme, un chant, et que s'il y avait plusieurs formes de poèmes, pendant longtemps il n'y eut pratiquement pas de prose. L'étude de la poésie chinoise ancienne est donc l'étude de l'ensemble de la littérature de cette période.</p>
+                    
+                <p>Si nous connaissons autant de poèmes anciens, c'est que les souverains de l'antiquité et des débuts de l'empire, pour évaluer l'état d'esprit des sujets de leurs diverses provinces, envoyaient des émissaires chargés de rapporter les poèmes et les chansons nouvelles.</p>
+                <br>
+
+                <h3>Objectif du site</h3>
+                
+                <p>Ce site permet de partager les poèmes chinois dans le domaine francophone.</p>
+                <p>Notre but est de créer une base de données de poèmes chinoises et leurs traductions en français et les partager avec les gens qui s'intéressent.</p>
+                <p>Ici, vous avez la fonction de la recherche qui vous permet de chercher les poèmes par nom d'auteur, nom de la poème ou par le terme en français. Vous pouvez tout remplir ou le(s) champs que vous voulez remplir.</p>
+                <p>Pourtant, lorsque les poèmes chinois sont nombreux et nous ponvons pas tout créer nous-même. Si vous vous intéresse, vous pouvez aussi ajouter le nouveau poème par la fonction ajout.</p>
+                <br><br>
+                
+            </div>
+            <div id="recherche">
+                <div id="flip">
+                    <h2>Recherche</h2>
+                </div>
+                <div id="panel">
+                <form method="post" action="projet.pdo.php">
+                    Nom de l'auteur: <input type="text" name="nomauteur"><br><br>
+                    Nom de la poème : <input type="text" name="nompoeme"><br><br>
+                    Terme de la poème : 
+                    <input type="radio" name="terme" value="paysage">Paysage
+                    <input type="radio" name="terme" value="guerre"> Guerre
+                    <input type="radio" name="terme" value="histoire">Histoire
+                    <input type="radio" name="terme" value="tristesse">Tristesse
+                    
+                    <br><br>
+                    <input type="submit" name="submit" value="Cherche">
+                    
+                </form>
+                </div>
+            </div>
+            
+            <div id="ajout">
+                <h2>Ajout des nouveaux poèmes</h2>
+                <p>Vous voulez ajouter un nouveau poème ? <a href="ajout.html">Cliquez ici</a>!</p>
+            </div>
+        </article>
+        </section>
+        <footer>
+            <p>Copyright : Xinyi Shen 2021</p>
+        </footer>
+    </body>
+</html>
